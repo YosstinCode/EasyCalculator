@@ -1,0 +1,32 @@
+{
+  "name": "easycalculator",
+  "version": "1.0.0",
+  "description": "Calculadora para sacar el promedio del semestre",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./Scrapper/Index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YosstinCode/EasyCalculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YosstinCode/EasyCalculator/issues"
+  },
+  "homepage": "https://github.com/YosstinCode/EasyCalculator#readme",
+  "devDependencies": {
+    "playwright": "^1.22.2",
+    "standard": "^17.0.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
+}
