@@ -34,7 +34,7 @@ await portalPage.waitForLoadState()
 await portalPage.click('a:has-text("Alumnos")')
 await portalPage.waitForLoadState('domcontentloaded')
 
-// await portalPage.waitForTimeout(10000)
+// await portalPage.waitForTimeout(2000)
 await portalPage.click('text=Mi Matricula')
 await portalPage.waitForLoadState('domcontentloaded')
 
@@ -47,6 +47,7 @@ await portalPage.click('text=Enviar')
 
 // get courses of semester
 // await portalPage.screenshot({ path: 'capture/celta_5.png' })
+await portalPage.waitForLoadState('domcontentloaded')
 const tablesText = await portalPage.locator('table').allTextContents() // get all tables from page
 
 // await portalPage.screenshot({ path: 'capture/celta_6.png' })
@@ -101,11 +102,10 @@ for (const nrc of nrcs) {
 }
 
 // :3 obtenido
-
 const data = courses.map((course, index) => course.concat([notesCourses[index]]))
 console.log(data)
 // data.forEach(item => console.log(item[4]))
 
-await portalPage.waitForTimeout(2000)
+// await portalPage.waitForTimeout(2000)
 // await portalPage.screenshot({ path: 'capture/celta_4.png' })
 await browser.close()
