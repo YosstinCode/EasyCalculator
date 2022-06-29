@@ -1,0 +1,55 @@
+body {
+    background-color: #14151B;
+    font-family: sans-serif 4;
+
+}
+
+div {
+    padding: 80px;
+    background-color: #23242A; 
+    width: 350px;
+    height: 500px;
+    margin-left: 205px;
+}
+h1 {
+    color: white
+}
+
+h2 {
+    color: white
+}
+
+h3 {
+    color: white
+}
+
+p {
+    color:white
+}
+input {
+    color: cadetblue;
+
+}
+img {
+    Width: 40px;
+    Height:40px;
+}
+
+a {
+    display: block;
+    width: 87px;
+    height: 22px;
+    font-family: serif 4; 
+    background-color: #3F8CFF;
+    border-radius: 34px;
+    padding-left: 96px;
+    padding-right: 96px;
+    padding-top: 11px;
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    background-color: transparente;
+    border: 2px solid #3F8CFF; 
+    color: white;
+}

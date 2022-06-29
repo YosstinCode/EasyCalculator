@@ -1,0 +1,28 @@
+body {
+    background-color: #14151B;
+    font-family: sans-serif 4;
+
+}
+h2 {
+    color: white;
+    
+
+}
+h3 {
+    color: white;
+    font-size: 32px;
+}
+h4 {
+    color: white;
+    font-size: 28px;
+}
+div {
+    background-color: #23242A;
+    display:block;
+    border-radius: 16px;
+    position: absolute;
+    margin-left: 433px;
+    margin-right: 433px;
+    margin-top: 183px;
+    
+}
