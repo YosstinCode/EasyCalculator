@@ -9,39 +9,38 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div id="header">
+    <header id="header">
         <div id="titulo">
             <h1>Easy Calculator</h1>
         </div>
         <div id="subtitulo">
-            <h2>About QA</h2>
+            <!-- <a href="">About</a> -->
+            <!-- <a href="">QA</a> -->
         </div>
-    </div>
+    </header>
         
-    <div id="cajageneral">
-        <div id="caja1">
-            <img src="VectorB.png">
-            <h3>Automatico</h3>
-            <br> 
-            <p>Ingresa tu cuenta de universidad y automaticamente calcularemos tu promedio automaticamente
-            siempre y cuando las notas ya se encuentren disponibles.
-            </p>
-            <br> 
-            <a href="usuario.html" target="_blank">Seleccionar</a>
-        </div>
-        <div id="caja2">
-            <img src="VectorA.png">
-            <h3>Manual</h3>
-            <br> 
-            <p>
-            Ingresa manualmente tus notas para calcular tu promedio, usalo si no estan disponibles tus notas 
-            pero tienes una idea de cuanto sacarias. 
-            </p>
-            <br> 
-            <a href="usuario.html" target="_blank">Seleccionar</a>
-        </div>
-    </div>
-    
+    <main>
+        <section id="cajageneral">
+            <article  class="card" id="caja1">
+                <img class="icon" src="./static/img/VectorB.png">
+                <h3>Automatico</h3>
+                <p>Ingresa tu cuenta de universidad y automaticamente calcularemos tu promedio automaticamente
+                siempre y cuando las notas ya se encuentren disponibles.
+                </p>
+                <a class="card__button" href="usuario.html" target="_blank">Seleccionar</a>
+            </article>
+            <article  class="card" id="caja2">
+                <img class="icon"  src="./static/img/VectorA.png">
+                <h3>Manual</h3>
+                <p>
+                Ingresa manualmente tus notas para calcular tu promedio, usalo si no estan disponibles tus notas 
+                pero tienes una idea de cuanto sacarias. 
+                </p>
+                <a class="card__button" href="usuario.html" target="_blank">Seleccionar</a>
+            </article>
+        </section>
+        
+    </main>
 
 </body>
 </html>
