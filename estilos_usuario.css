@@ -17,13 +17,38 @@ h4 {
     color: white;
     font-size: 28px;
 }
-div {
+div#primera_caja {
     background-color: #23242A;
     display:block;
     border-radius: 16px;
     position: absolute;
-    margin-left: 433px;
-    margin-right: 433px;
-    margin-top: 183px;
-    
+    width: 500px;
+    height: 500px;
+    left: 433px;
+    top: 183px;
+
+}
+div#segunda_caja {
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    top: 25.4%;
+    bottom: 29.4%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 18px;
+}
+a{
+    display: block;
+    width: 278px;
+    height: 44px;
+    top: 410px;
+    left: 110px;
+    font-family: serif 4; 
+    background-color: #3F8CFF;
+    border-radius: 34px;
+    color: white;
+    text-decoration: none;
 }
