@@ -1,44 +1,41 @@
 body {
     background-color: #14151B;
-    font-family: sans-serif 4;
+    font-family: "Source serif 4";
+    color: white;
+    overflow: hidden;
 
 }
-h2 {
-    color: white;
+
+.primera_caja {
+    background-color: #23242A;
+    margin: 121px 40px 77px 40px;
+    display:block;
+    border-radius: 16px;
+    width: 240px;
+    height: 370px;
     
 
 }
-h3 {
-    color: white;
-    font-size: 32px;
-    line-height: 44px;
-}
-h4 {
-    color: white;
-    font-size: 28px;
-}
-div#primera_caja {
-    background-color: #23242A;
-    display:block;
-    border-radius: 16px;
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    left: 433px;
-    top: 183px;
+.subtitulo {
+    margin: 22.45px 0px 320.42px 0px;
+    width: 240px;
+    height: 27.13px;
+    font-size: 16px;
+    align-self: center;
+
 
 }
-div#segunda_caja {
-    position: absolute;
-    left: 15%;
-    right: 15%;
-    top: 25.4%;
-    bottom: 29.4%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 18px;
+.segunda_caja {
+    width: 200px;
+    height: 167.24px;
+    margin: 93.05px 20px 109.71px 20px;
+
+}
+.button {
+    background-color: #14151B;
+    width: 200px;
+    height: 32px;
+    border-radius: 16px
 }
 a{
     display: block;
@@ -51,4 +48,13 @@ a{
     border-radius: 34px;
     color: white;
     text-decoration: none;
+}
+
+.card_navigation {
+    display: flex;
+    padding: 0%;
+    color: blank;
+    background-color: #14151B;
+
+    
 }
