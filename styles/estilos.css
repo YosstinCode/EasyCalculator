@@ -108,7 +108,8 @@ a:hover {
 
 @media (min-width: 800px) {
     #cajageneral{
-         flex-direction: row;   
+         flex-direction: row; 
+           
     }
 
     

@@ -22,18 +22,17 @@ body {
 .caja_principal {
     background-color: #23242A;
     margin: 121px 40px 77px 40px;
-    display:flex;
     border-radius: 16px;
-    width: 240px;
+    width: 290px;
     height: 370px;
 
 }
     
 #subtitulo {
     display: flex;
+    padding: 30px 0px 70px 70px;
     width: 240px;
     height: 27px;
-    margin: 22.45px 0px 320.42px 80px;
     font-size: 16px;
     text-align: center;
 }
@@ -41,7 +40,8 @@ body {
 .segunda_caja {
     width: 200px;
     height: 167.24px;
-    margin: 93.05px 20px 109.71px 20px;
+    margin: 5px 20px 50px 20px;
+    
 
 }
 .button {
@@ -53,7 +53,7 @@ body {
     border-color: #14151B;
 }
 a {
-    margin: 304px 53.56px 33.34px 2px; 
+    margin-left: 50px; 
     padding: 10px 60px;
     text-align: center;
     background-color: #3F8CFF;
@@ -71,5 +71,9 @@ a {
     color: blank;
     background-color: #14151B;
 
+    
+}
+
+@media screen {
     
 }
