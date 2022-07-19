@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio Calculator</title>
-    <link rel="icon" href="calculadora2.ico">
-    <link rel="stylesheet" href="./styles/estilos.css">
-</head>
-<body>
-    <header id="header">
-        <div id="titulo">
-            <h1>Easy Calculator</h1>
-        </div>
-        <div id="subtitulo">
-            <!-- <a href="">About</a> -->
-            <!-- <a href="">QA</a> -->
-        </div>
-    </header>
-        
-    <main>
-        <section id="cajageneral">
-            <article  class="card" id="caja1">
-                <img class="icon" src="./static/img/VectorB.png">
-                <h3>Automatico</h3>
-                <p>Ingresa tu cuenta de universidad y automaticamente calcularemos tu promedio automaticamente
-                siempre y cuando las notas ya se encuentren disponibles.
-                </p>
-                <a class="card__button" href="./pages/usuario.html" target="_blank">Seleccionar</a>
-            </article>
-            <article  class="card" id="caja2">
-                <img class="icon"  src="./static/img/VectorA.png">
-                <h3>Manual</h3>
-                <p>
-                Ingresa manualmente tus notas para calcular tu promedio, usalo si no estan disponibles tus notas 
-                pero tienes una idea de cuanto sacarias. 
-                </p>
-                <a class="card__button" href="usuario.html" target="_blank">Seleccionar</a>
-            </article>
-        </section>
-        
-    </main>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EasyCalculatorNotes</title>
+  <link rel="icon" href="calculadora2.ico" />
+  <link rel="stylesheet" href="./styles/home/index.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <h1 class="nav__title">Easy Calculator Notes</h1>
+      <button class="nav__button">
+        <img src="./static/img/icon_menu.svg" alt="menu" />
+      </button>
+      <ul class="nav__items">
+        <li class="nav__items__item">
+          <a href="" class="nav__items__item__link">About</a>
+        </li>
+        <li class="nav__items__item">
+          <a href="" class="nav__items__item__link">QA</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="options-cards">
+      <article class="options-cards__card" id="caja1">
+        <div class="option-cards__header">
+          <img class="options-cards__card__icon" src="./static/img/icon_automatic.png" />
+          <h3 class="options-cards__card__title">Automatico</h3>
+        </div>
+        <p class="options-cards__card__text">
+          Ingresa tu cuenta de universidad y automaticamente calcularemos tu
+          promedio siempre y cuando las notas ya se encuentren disponibles.
+        </p>
+        <a class="options-cards__card__button button" href="./pages/login.html">Seleccionar</a>
+      </article>
+      <article class="options-cards__card" id="caja2">
+        <div class="option-cards__header">
+          <img class="options-cards__card__icon" src="./static/img/icon_manual.png" />
+          <h3 class="options-cards__card__title">Manual</h3>
+        </div>
+        <p class="options-cards__card__text">
+          Ingresa manualmente tus notas para calcular tu promedio, usalo si no
+          estan disponibles tus notas pero tienes una idea de cuanto sacarias.
+        </p>
+        <a class="options-cards__card__button button" href="./pages/calculator.html">Seleccionar</a>
+      </article>
+    </section>
+  </main>
 </body>
+
 </html>

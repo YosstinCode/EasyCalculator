@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "SourceSerif4";
+    src: url("./static/fonts/SourceSerif4-Bold.ttf");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SourceSerif4";
+    src: url("./static/fonts/SourceSerif4-SemiBold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SourceSerif4";
+    src: url("./static/fonts/SourceSerif4-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SourceSerif4";
+    src: url("./static/fonts/SourceSerif4-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
