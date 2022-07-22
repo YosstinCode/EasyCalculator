@@ -53,27 +53,39 @@ const tablesText = await portalPage.locator('table').allTextContents() // get al
 // await portalPage.screenshot({ path: 'capture/celta_6.png' })
 const coursesArray = tablesText[5].split('\n') // select data about of courses
 
-const categories = coursesArray.filter(course => course).map(course => course.trim()).slice(1, 9)
-const coursesData = coursesArray.filter(course => course).map(course => course.trim()).slice(9)
+const categories = coursesArray
+  .filter((course) => course)
+  .map((course) => course.trim())
+  .slice(1, 9)
+const coursesData = coursesArray
+  .filter((course) => course)
+  .map((course) => course.trim())
+  .slice(9)
 
-const courses = categories.map((item, index) => {
-  const course = coursesData.slice(0, 8)
-  coursesData.splice(0, 8)
+const courses = categories
+  .map((item, index) => {
+    const course = coursesData.slice(0, 8)
+    coursesData.splice(0, 8)
 
-  return course
-}).filter(course => course.length !== 0) // clean array
+    return course
+  })
+  .filter((course) => course.length !== 0) // clean array
   .map((materias) => {
     const propierties = [0, 4, 6, 7]
 
-    return materias.map((materia, indexProperty) => (propierties.indexOf(indexProperty) > -1) && materia) // select data important
-      .filter(materia => materia)
+    return materias
+      .map(
+        (materia, indexProperty) =>
+          propierties.indexOf(indexProperty) > -1 && materia
+      ) // select data important
+      .filter((materia) => materia)
   })
 
 // console.log(courses)
 
 // create array with nrcs from courses of courts
 
-const nrcs = courses.map(course => course[0])
+const nrcs = courses.map((course) => course[0])
 
 // console.log(nrcs)
 
@@ -91,7 +103,10 @@ for (const nrc of nrcs) {
 
   const tableNotes = await portalPage.locator('table').allInnerTexts()
 
-  const notes = tableNotes[5].split('\n').splice(3).map(rowNotes => rowNotes.split('\t')[2])
+  const notes = tableNotes[5]
+    .split('\n')
+    .splice(3)
+    .map((rowNotes) => rowNotes.split('\t')[2])
 
   // console.log(notes)
 
@@ -102,8 +117,17 @@ for (const nrc of nrcs) {
 }
 
 // :3 obtenido
-const data = courses.map((course, index) => course.concat([notesCourses[index]]))
-console.log(data)
+const data = courses.map((course, index) =>
+  course.concat([notesCourses[index]])
+)
+
+const dataCleaning = data.map((el) => {
+  return el.reduce((prev, data, index) => {
+    const key = ['nrc', 'name', 'credits', 'level', 'notes']
+    return { ...prev, [key[index]]: data }
+  }, null)
+})
+console.log(dataCleaning)
 // data.forEach(item => console.log(item[4]))
 
 // await portalPage.waitForTimeout(2000)

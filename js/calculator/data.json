@@ -1,0 +1,44 @@
+[
+  {
+    "nrc": "10029",
+    "name": "TALLER DE LECTURA Y ESCRITURA",
+    "credits": "3.000",
+    "level": "Profesional",
+    "notes": ["3.8", "3.8", "4.3"]
+  },
+  {
+    "nrc": "11726",
+    "name": "HISTORIA DE LAS CULTURAS CONTEMPORÁNEAS",
+    "credits": "2.000",
+    "level": "Profesional",
+    "notes": ["4.7", "4.7", "3.1"]
+  },
+  {
+    "nrc": "10023",
+    "name": "FUNDAMENTOS DE INGENIERÍA",
+    "credits": "2.000",
+    "level": "Profesional",
+    "notes": ["4", "4", "4.1"]
+  },
+  {
+    "nrc": "10025",
+    "name": "FUNDAMENTOS DE INFORMÁTICA Y LÓGICA DE PROGRAMACIÓN",
+    "credits": "2.000",
+    "level": "Profesional",
+    "notes": ["4.4", "4.7", "4.8"]
+  },
+  {
+    "nrc": "10027",
+    "name": "CALCULO INFINITESIMAL",
+    "credits": "4.000",
+    "level": "Profesional",
+    "notes": ["4", "4.1", "3.1"]
+  },
+  {
+    "nrc": "11722",
+    "name": "Teoría de Sistemas Sociotécnicos",
+    "credits": "3.000",
+    "level": "Profesional",
+    "notes": ["4.3", "4", "3.9"]
+  }
+]

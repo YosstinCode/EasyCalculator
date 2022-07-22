@@ -13,6 +13,7 @@
 }
 
 .nav__title{
+    font-size: 1.25rem;
     font-weight: 300;
 }
 
@@ -41,7 +42,7 @@
     }
 
     .nav__title{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .nav__button{
@@ -52,8 +53,12 @@
         display: flex;
         gap: 1rem;
         font-size: 1.5rem;
-    }
+        font-weight: 300;
 
+        padding: .5rem;
+
+    }
+    
     .nav__items__item__link{
         border-bottom: .25px solid transparent;
     }

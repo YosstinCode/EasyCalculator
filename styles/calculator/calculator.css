@@ -21,13 +21,27 @@
   background-color: #23242a;
   border-radius: 8px;
   padding: 0.5rem;
-  gap: .5rem;
+  gap: 1.25rem;
+  justify-content: center;
   align-items: center;
 }
 
 .form__course__wrapper__flex {
+  height: 100%;
   display: grid;
-  gap: 0.5rem;
+  justify-items: stretch;
+  align-items: center;
+  /* gap: 0.5rem; */
+}
+
+.form__course__wrapper__flex__course{
+  width: 25ch;
+  background-color: transparent;
+  font-family: "SourceSerif4";
+  border: none;
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 .form__course__wrapper__flex__credits {
@@ -37,6 +51,7 @@
 }
 
 .form__course__wrapper__flex__credits__text {
+  font-size: .8rem;
   font-weight: lighter;
 }
 
@@ -53,8 +68,8 @@
 }
 
 .form__course__wrapper__note {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border: none;
     border-radius: 8px;
     text-align: center;
@@ -64,6 +79,22 @@
     font-weight: lighter;
     padding: .4rem;
 }
+
+/* Chrome, Safari, Edge, Opera */
+.form__course__wrapper__flex__credits__input::-webkit-outer-spin-button,
+.form__course__wrapper__flex__credits__input::-webkit-inner-spin-button,
+.form__course__wrapper__note::-webkit-outer-spin-button,
+.form__course__wrapper__note::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.form__course__wrapper__flex__credits__input[type=number],
+.form__course__wrapper__note[type=number] {
+  -moz-appearance: textfield;
+}
+
 .form__course__button-wrapper {
   display: grid;
   place-items: center;
@@ -102,4 +133,63 @@
 
 .form__button {
   border: none;
+}
+
+
+@media (min-width: 800px) {
+  .form__course__wrapper{
+    padding: 1rem;
+    width: 48rem;
+    height: 6rem;
+    gap: 5rem;
+    border-radius: 1rem;
+  }
+
+  .form__course__wrapper__flex{
+    gap: 1rem;
+  }
+
+  .form__course__wrapper__flex__course{
+    width: 40ch;
+    font-size: 28px;
+  }
+
+  .form__course__wrapper__flex__credits{
+    font-size: 20px;
+  }
+
+  .form__course__wrapper__flex__credits__text{
+    font-size: 1.25rem;
+  }
+
+  .form__course__wrapper__flex__credits__input{
+    width: 2.5rem;
+    height: 1rem;
+    border-radius: .5rem;
+  }
+
+  .form__course__wrapper__note{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    font-size: 2.75rem;
+  }
+
+  .form__course__button-wrapper__button{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+  }
+
+  .form__course__button-wrapper__button__img{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .form__button{
+    margin: 0 auto;
+    width: 20%;
+    font-size: 1.25rem;
+    height: 1.5rem;
+  }
 }
